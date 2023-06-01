@@ -10,6 +10,12 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "dev:api": {
+      "env": ["PORT"]
+    },
+    "clean": {
+      "cache": false
     }
   }
 }
