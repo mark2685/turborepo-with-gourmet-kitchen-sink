@@ -2,6 +2,7 @@ import { prisma } from '.'
 
 import type { User } from '@prisma/client'
 
+/*
 const DEFAULT_USERS = [
   {
     name: 'Tim Apple',
@@ -33,3 +34,4 @@ const DEFAULT_USERS = [
     await prisma.$disconnect()
   }
 })()
+*/

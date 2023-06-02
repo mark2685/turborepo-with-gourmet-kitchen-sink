@@ -1,6 +1,15 @@
 name: nextjs-monorepo-example-db
 
 services:
+  redis:
+    image: redis:latest
+    ports:
+      - '${REDIS_PORT}:6379'
+  rcli:
+    image: redis:latest
+    links:
+      - redis
+    command: redis-cli -h redis
   database:
     container_name: database 
     image: postgres:15.3-alpine3.17
